@@ -8,20 +8,22 @@
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to right, #e0f7fa, #b2ebf2);
       margin: 0;
-      padding: 20px;
+      padding: 40px 20px;
     }
     h1 {
       text-align: center;
       color: #0077b6;
+      margin-bottom: 40px;
     }
     .karten-container {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
       justify-content: center;
-      gap: 20px;
+      padding: 0 10px;
     }
     .karte {
-      width: 300px;
+      width: 100%;
       height: 180px;
       perspective: 1000px;
     }
@@ -42,7 +44,7 @@
       height: 100%;
       backface-visibility: hidden;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -65,7 +67,7 @@
   <h1>Interaktive Lernkarten</h1>
   <div class="karten-container">
 
-    <!-- Gegensatzkarte -->
+    <!-- Beispielkarten -->
     <div class="karte">
       <div class="inhalt">
         <div class="seite vorderseite">Unrecht ◀▶</div>
@@ -73,58 +75,5 @@
       </div>
     </div>
 
-    <!-- Synonymkarte -->
     <div class="karte">
       <div class="inhalt">
-        <div class="seite vorderseite">Unternehmer/in ▶▶</div>
-        <div class="seite rueckseite">entrepreneur ▶▶ businessman/businesswoman</div>
-      </div>
-    </div>
-
-    <!-- Lückensatzkarte -->
-    <div class="karte">
-      <div class="inhalt">
-        <div class="seite vorderseite">We reached an ________. (= eine Vereinbarung treffen)</div>
-        <div class="seite rueckseite">agreement</div>
-      </div>
-    </div>
-
-    <!-- Weitere Kartenbeispiele -->
-    <div class="karte">
-      <div class="inhalt">
-        <div class="seite vorderseite">zeitweise, manchmal ▶▶</div>
-        <div class="seite rueckseite">at times ▶▶ sometimes</div>
-      </div>
-    </div>
-
-    <div class="karte">
-      <div class="inhalt">
-        <div class="seite vorderseite">Korruption – Adjektiv?</div>
-        <div class="seite rueckseite">corrupt</div>
-      </div>
-    </div>
-
-    <div class="karte">
-      <div class="inhalt">
-        <div class="seite vorderseite">Fix your hair! It looks ______.</div>
-        <div class="seite rueckseite">terrible</div>
-      </div>
-    </div>
-
-    <div class="karte">
-      <div class="inhalt">
-        <div class="seite vorderseite">Rassismus – Person?</div>
-        <div class="seite rueckseite">racist</div>
-      </div>
-    </div>
-
-    <div class="karte">
-      <div class="inhalt">
-        <div class="seite vorderseite">Scheitern – Substantiv?</div>
-        <div class="seite rueckseite">failure</div>
-      </div>
-    </div>
-
-  </div>
-</body>
-</html>
